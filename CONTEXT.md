@@ -24,3 +24,4 @@
 
 ## Gap ledger (dedupe)
 - `2026-09-03` trivial-cleanup pass (typos + dead Tuist links, Example/README + CONTRIBUTING + source doc comments) — outcome: pr-opened (fork) — lesson: docs.tuist.io + install.tuist.io are dead; canonical is docs.tuist.dev/en/guides/quick-start/install-tuist
+- `2026-09-03` PR #1 (fork) — outcome: pr-opened — https://github.com/olitreadwell/AccessibilitySnapshot/pull/1 — typos + dead Tuist links fixed, CI green 6/6. Not to be re-picked.
