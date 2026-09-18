@@ -36,7 +36,7 @@ final class BlockBasedAccessibilityViewController: AccessibilityViewController {
         let spacing: CGFloat = 20
         let circlesPerRow = 4
 
-        // Create circles for each overrideable property
+        // Create circles for each overridable property
         let properties = [
             "Label",
             "Value",

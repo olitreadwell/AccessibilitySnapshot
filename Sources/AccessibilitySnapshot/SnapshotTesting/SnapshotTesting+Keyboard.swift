@@ -11,7 +11,7 @@ public extension Snapshotting where Value == UIView, Format == UIImage {
     /// - parameter useMonochromeSnapshot: Whether or not the snapshot of the `view` should be monochrome. Using a
     /// monochrome snapshot makes it more clear where the highlighted elements are, but may make it difficult to
     /// read certain views. Defaults to `true`.
-    /// - parameter drawHierarchyInKeyWindow: Whether or not to draw the view hierachy in the key window, rather than
+    /// - parameter drawHierarchyInKeyWindow: Whether or not to draw the view hierarchy in the key window, rather than
     /// rendering the view's layer. This enables the rendering of `UIAppearance` and `UIVisualEffect`s.
     /// - parameter precision: The percentage of pixels that must match. A value of `1` means all pixels must match,
     /// while a value of `0.95` means that 95% of pixels must match.
@@ -45,7 +45,7 @@ public extension Snapshotting where Value == UIView, Format == UIImage {
     /// - parameter useMonochromeSnapshot: Whether or not the snapshot of the `view` should be monochrome. Using a
     /// monochrome snapshot makes it more clear where the highlighted elements are, but may make it difficult to
     /// read certain views. Defaults to `true`.
-    /// - parameter drawHierarchyInKeyWindow: Whether or not to draw the view hierachy in the key window, rather than
+    /// - parameter drawHierarchyInKeyWindow: Whether or not to draw the view hierarchy in the key window, rather than
     /// rendering the view's layer. This enables the rendering of `UIAppearance` and `UIVisualEffect`s.
     /// - parameter precision: The percentage of pixels that must match. A value of `1` means all pixels must match,
     /// while a value of `0.95` means that 95% of pixels must match.
@@ -81,7 +81,7 @@ public extension Snapshotting where Value == UIViewController, Format == UIImage
     /// - parameter useMonochromeSnapshot: Whether or not the snapshot of the view should be monochrome. Using a
     /// monochrome snapshot makes it more clear where the highlighted elements are, but may make it difficult to
     /// read certain views. Defaults to `true`.
-    /// - parameter drawHierarchyInKeyWindow: Whether or not to draw the view hierachy in the key window, rather than
+    /// - parameter drawHierarchyInKeyWindow: Whether or not to draw the view hierarchy in the key window, rather than
     /// rendering the view's layer. This enables the rendering of `UIAppearance` and `UIVisualEffect`s.
     static func keyboardAccessibilityImage(
         useMonochromeSnapshot: Bool = true,
@@ -107,7 +107,7 @@ public extension Snapshotting where Value == UIViewController, Format == UIImage
     /// - parameter useMonochromeSnapshot: Whether or not the snapshot of the view should be monochrome. Using a
     /// monochrome snapshot makes it more clear where the highlighted elements are, but may make it difficult to
     /// read certain views. Defaults to `true`.
-    /// - parameter drawHierarchyInKeyWindow: Whether or not to draw the view hierachy in the key window, rather than
+    /// - parameter drawHierarchyInKeyWindow: Whether or not to draw the view hierarchy in the key window, rather than
     /// rendering the view's layer. This enables the rendering of `UIAppearance` and `UIVisualEffect`s.
     /// - parameter precision: The percentage of pixels that must match. A value of `1` means all pixels must match,
     /// while a value of `0.95` means that 95% of pixels must match.
