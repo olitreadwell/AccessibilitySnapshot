@@ -4,12 +4,12 @@ This is an example project that includes snapshot tests that are also used by th
 
 ## Development Requirements
 
-Your local environment should match one these supported versions.
+Your local environment should match one of these supported versions.
 
 | Software | Versions |
 | --- | --- |
 | Xcode | 12.5.1 (iOS 13 and 14), 14.3.1 (iOS 16) [.github/workflows/ci.yml](https://github.com/cashapp/AccessibilitySnapshot/blob/main/.github/workflows/ci.yml) |
-| Tuist | See [Tuist installation docs](https://docs.tuist.io/guides/quick-start/install-tuist) |
+| Tuist | See [Tuist installation docs](https://docs.tuist.dev/en/guides/quick-start/install-tuist) |
 | Simulators | iOS 16.4, iOS 17.2 - iPhone 14 Pro [Scripts/build.swift](https://github.com/cashapp/AccessibilitySnapshot/blob/main/Scripts/build.swift) |
 
 ### Setting up environment
@@ -26,7 +26,8 @@ Your local environment should match one these supported versions.
 1. Install Tuist
 
    ```sh
-   curl -Ls https://install.tuist.io | bash
+   brew tap tuist/tuist
+   brew install --formula tuist
    ```
 
    Verify your installation:
