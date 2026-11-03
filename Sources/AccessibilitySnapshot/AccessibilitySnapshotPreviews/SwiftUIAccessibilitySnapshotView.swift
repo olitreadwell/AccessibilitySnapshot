@@ -58,7 +58,7 @@ public struct AccessibilitySnapshotView<Content: View>: View {
                 parseAccessibility()
             }
         }
-        .background(Color(white: 0.9))
+        .background(DesignTokens.Colors.snapshotBackground)
     }
 
     // MARK: - Private Views
@@ -128,7 +128,7 @@ public struct AccessibilitySnapshotView<Content: View>: View {
             markers = parser.parseAccessibilityHierarchy(
                 in: hostingController.view,
                 rotorResultLimit: configuration.rotors.resultLimit
-            ).flattenToElements()
+            ).flattenToElements().filter { $0.visibility == .onscreen }
         } catch {
             parseError = error
         }
@@ -177,7 +177,7 @@ public struct PreParsedAccessibilitySnapshotView: View {
         renderSize: CGSize
     ) {
         self.snapshotImage = snapshotImage
-        self.markers = markers
+        self.markers = markers.filter { $0.visibility == .onscreen }
         self.configuration = configuration
         self.palette = palette
         self.renderSize = renderSize
@@ -206,13 +206,17 @@ public struct PreParsedAccessibilitySnapshotView: View {
     }
 
     public var body: some View {
-        if legendOnRight {
+        if markers.isEmpty {
+            // Without a legend there is nothing to reserve `minimumWidth` for.
+            snapshotWithOverlays
+                .background(DesignTokens.Colors.snapshotBackground)
+        } else if legendOnRight {
             // Tall view: snapshot on left, legend on right (may span multiple columns)
             HStack(alignment: .top, spacing: 0) {
                 snapshotWithOverlays
                 multiColumnLegend
             }
-            .background(Color(white: 0.9))
+            .background(DesignTokens.Colors.snapshotBackground)
         } else {
             // Wide view: snapshot on top, legend on bottom
             VStack(spacing: 0) {
@@ -226,7 +230,7 @@ public struct PreParsedAccessibilitySnapshotView: View {
                 )
                 .frame(width: contentWidth)
             }
-            .background(Color(white: 0.9))
+            .background(DesignTokens.Colors.snapshotBackground)
         }
     }
 
