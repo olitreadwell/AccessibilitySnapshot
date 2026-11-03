@@ -21,7 +21,7 @@ public extension Snapshotting where Value == UIView, Format == UIImage {
     /// - parameter useMonochromeSnapshot: Whether or not the snapshot of the `view` should be monochrome. Using a
     /// monochrome snapshot makes it more clear where the highlighted elements are, but may make it difficult to
     /// read certain views. Defaults to `true`.
-    /// - parameter drawHierarchyInKeyWindow: Whether or not to draw the view hierachy in the key window, rather than
+    /// - parameter drawHierarchyInKeyWindow: Whether or not to draw the view hierarchy in the key window, rather than
     /// rendering the view's layer. This enables the rendering of `UIAppearance` and `UIVisualEffect`s.
     /// - parameter markerColors: The array of colors which will be chosen from when creating the overlays.
     /// - parameter showUserInputLabels: Controls when to show elements' accessibility user input labels (used by Voice
@@ -188,7 +188,7 @@ public extension Snapshotting where Value == UIView, Format == UIImage {
     /// - parameter useMonochromeSnapshot: Whether or not the snapshot of the view should be monochrome. Using a
     /// monochrome snapshot makes it more clear where the highlighted elements are, but may make it difficult to
     /// read certain views.
-    /// - parameter drawHierarchyInKeyWindow: Whether or not to draw the view hierachy in the key window, rather than
+    /// - parameter drawHierarchyInKeyWindow: Whether or not to draw the view hierarchy in the key window, rather than
     /// rendering the view's layer. This enables the rendering of `UIAppearance` and `UIVisualEffect`s.
     /// - parameter colors: An array of colors to use for the highlighted regions. These colors will be used in order,
     /// repeating through the array as necessary and avoiding adjacent regions using the same color when possible.
@@ -277,7 +277,7 @@ public extension Snapshotting where Value == UIViewController, Format == UIImage
     /// - parameter useMonochromeSnapshot: Whether or not the snapshot of the `view` should be monochrome. Using a
     /// monochrome snapshot makes it more clear where the highlighted elements are, but may make it difficult to
     /// read certain views. Defaults to `true`.
-    /// - parameter drawHierarchyInKeyWindow: Whether or not to draw the view hierachy in the key window, rather than
+    /// - parameter drawHierarchyInKeyWindow: Whether or not to draw the view hierarchy in the key window, rather than
     /// rendering the view's layer. This enables the rendering of `UIAppearance` and `UIVisualEffect`s.
     /// - parameter markerColors: The array of colors which will be chosen from when creating the overlays.
     /// - parameter showUserInputLabels: Controls when to show elements' accessibility user input labels (used by Voice
@@ -349,7 +349,7 @@ public extension Snapshotting where Value == UIViewController, Format == UIImage
     /// - parameter useMonochromeSnapshot: Whether or not the snapshot of the view should be monochrome. Using a
     /// monochrome snapshot makes it more clear where the highlighted elements are, but may make it difficult to
     /// read certain views.
-    /// - parameter drawHierarchyInKeyWindow: Whether or not to draw the view hierachy in the key window, rather than
+    /// - parameter drawHierarchyInKeyWindow: Whether or not to draw the view hierarchy in the key window, rather than
     /// rendering the view's layer. This enables the rendering of `UIAppearance` and `UIVisualEffect`s.
     /// - parameter colors: An array of colors to use for the highlighted regions. These colors will be used in order,
     /// repeating through the array as necessary and avoiding adjacent regions using the same color when possible.

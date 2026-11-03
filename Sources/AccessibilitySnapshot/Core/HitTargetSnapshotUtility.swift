@@ -108,7 +108,7 @@ public enum HitTargetSnapshotUtility {
 
             typealias ScanLine = [(xRange: ClosedRange<CGFloat>, view: UIView?)]
 
-            // In some cases striding by 1/3 can result in the `to` value being included due to a floating point rouding
+            // In some cases striding by 1/3 can result in the `to` value being included due to a floating point rounding
             // error, in particular when dealing with bounds with a negative y origin. By striding to a value slightly
             // less than the desired stop (small enough to be less than the density of any screen in the foreseeable
             // future), we can avoid this rounding problem.

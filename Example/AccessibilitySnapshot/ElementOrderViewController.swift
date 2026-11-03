@@ -181,7 +181,7 @@ extension Array where Element == ElementOrderViewController.ViewConfiguration {
 
     /// A container with elements interspersed in a stack of accessible views.
     ///
-    /// The main intention of this element set is to determine how VoiceOver groups accesibility containers together.
+    /// The main intention of this element set is to determine how VoiceOver groups accessibility containers together.
     static let containerInElementStack: [ElementOrderViewController.ViewConfiguration] = [
         .element(.init(horizontal: 0, vertical: -120)),
         .element(.init(horizontal: 0, vertical: 0)),
@@ -194,7 +194,7 @@ extension Array where Element == ElementOrderViewController.ViewConfiguration {
 
     /// A zero-sized container with elements interspersed in a stack of accessible views.
     ///
-    /// The main intention of this element set is to verify that VoiceOver skips accesibility containers with a zero
+    /// The main intention of this element set is to verify that VoiceOver skips accessibility containers with a zero
     /// size.
     static let zeroSizedContainerInElementStack: [ElementOrderViewController.ViewConfiguration] = [
         .element(.init(horizontal: 0, vertical: -120)),
